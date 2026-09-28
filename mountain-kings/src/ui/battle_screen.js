@@ -69,7 +69,23 @@ function scoreboard(S, sides) {
 }
 
 function stage(board, scene, sb, ...below) {
-  return h('div', { class: 'stage' }, h('div', { class: 'scene-wrap' }, scene.canvas), sb.el, h('div', { class: 'grid-frame' }, board.canvas), ...below);
+  const wrap = h('div', { class: 'scene-wrap' }, scene.canvas);
+  const scroll = h('div', { class: 'grid-scroll' }, board.canvas);
+  // On a phone both the battlefield and the grid scroll sideways; keep them
+  // in step so the soldiers above are the squares below.
+  let lock = false;
+  const link = (from, to) => from.addEventListener('scroll', () => {
+    if (lock) return;
+    lock = true;
+    const f = from.scrollWidth - from.clientWidth, g = to.scrollWidth - to.clientWidth;
+    to.scrollLeft = f > 0 ? (from.scrollLeft / f) * g : 0;
+    requestAnimationFrame(() => { lock = false; });
+  }, { passive: true });
+  link(scroll, wrap);
+  link(wrap, scroll);
+  // A minigame opens over the battlefield: bring it back to the start.
+  new MutationObserver(() => { if (wrap.querySelector('.aim-overlay')) wrap.scrollLeft = 0; }).observe(wrap, { childList: true });
+  return h('div', { class: 'stage' }, wrap, sb.el, h('div', { class: 'grid-frame' }, scroll), ...below);
 }
 
 // ---------------------------------------------------------------------------
@@ -583,7 +599,18 @@ export function battleScreen(app, S, { onEnd, onHelp }) {
   // Clicking a company selects just that company, so any company can step
   // out of a shield wall or V at will; shift adds or removes it from the
   // selection. The unit card offers to select its whole formation.
+  // Touch screens have no Shift key: the Group button makes taps add to the
+  // selection instead.
+  let groupTap = false;
+  const groupBtn = h('button', { class: 'ghost group-tap', 'aria-pressed': 'false', onclick: () => {
+    groupTap = !groupTap;
+    groupBtn.classList.toggle('active', groupTap);
+    groupBtn.setAttribute('aria-pressed', String(groupTap));
+    if (!groupTap && sel.length > 1) refresh();
+  } }, t('battle.groupTap'));
+
   function pick(u, additive) {
+    additive = additive || groupTap;
     mode = null;
     if (additive) sel = sel.includes(u.id) ? sel.filter((x) => x !== u.id) : [...sel, u.id];
     else sel = sel.length === 1 && sel[0] === u.id ? [] : [u.id];
@@ -741,7 +768,7 @@ export function battleScreen(app, S, { onEnd, onHelp }) {
       h('p', { class: 'objective' }, obj ? L(obj.text) : ''),
       h('section', { class: 'log-wrap' }, h('h3', {}, t('battle.chronicle')), logEl)),
     h('aside', { class: 'panel' },
-      h('div', { class: 'row spread tools' }, speedBtn, aimBtn, h('button', { class: 'ghost', onclick: onHelp, 'aria-label': t('title.howto') }, '?')),
+      h('div', { class: 'row spread tools' }, speedBtn, aimBtn, groupBtn, h('button', { class: 'ghost', onclick: onHelp, 'aria-label': t('title.howto') }, '?')),
       panelEl,
       h('h3', {}, t('battle.army')),
       armyEl,

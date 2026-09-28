@@ -141,8 +141,9 @@ export function cutsceneScreen(app, S, { onBack, onNext, rerender }) {
 
   app.replaceChildren(h('div', { class: 'screen frame' },
     h('div', { class: 'cutscene' },
-      map.canvas,
-      h('div', { class: 'cut-fg' }, fg.canvas),
+      // The map and the marching column share a box, so on a phone the
+      // caption can drop below both without the column covering it.
+      h('div', { class: 'cut-map' }, map.canvas, h('div', { class: 'cut-fg' }, fg.canvas)),
       h('div', { class: 'hero-over' }, h('div', { class: 'row spread' }, h('button', { class: 'ghost dark', onclick: onBack }, t('ui.back')), langToggle(rerender))),
       h('div', { class: 'caption' },
         h('div', { class: 'caption-date' }, `${L(sc.date)} · ${L(sc.place)}`),
@@ -259,7 +260,9 @@ export function musterScreen(app, S, { onBack, onNext, rerender }) {
       h('tr', { class: `fixed ${focus === side.leader.type ? 'focus' : ''}`, onmouseenter: () => { focus = side.leader.type; paintDetail(); } },
         h('td', {}, L(side.leader.name)), h('td', {}, 'n/a'), h('td', { class: 'count' }, '1'), h('td', {}, 'n/a')),
       ...types.map((k) => h('tr', { class: focus === k.id ? 'focus' : '', onmouseenter: () => { focus = k.id; paintDetail(); }, onclick: () => { focus = k.id; paint(); } },
-        h('td', {}, L(k.name), k.faction !== side.faction ? h('div', { class: 'muted small' }, t('muster.ally', { f: L(d.factions[k.faction].name) })) : null),
+        h('td', {}, L(k.name),
+          h('div', { class: 'muted small cost-inline' }, `${k.cost} ${t('muster.pts')}`),
+          k.faction !== side.faction ? h('div', { class: 'muted small' }, t('muster.ally', { f: L(d.factions[k.faction].name) })) : null),
         h('td', {}, `${k.cost} ${t('muster.pts')}`),
         h('td', { class: 'count' },
           h('button', { class: 'step', 'aria-label': t('muster.less'), onclick: (e) => { e.stopPropagation(); bump(k.id, -1); } }, '−'),

@@ -53,7 +53,7 @@
     "battle.next": "Next company (Tab)",
     "battle.chronicle": "Chronicle",
     "battle.order": "Order",
-    "battle.selectHint": "Choose one of your companies, on the board or in the list, to give it orders. Hover over any company to see it.",
+    "battle.selectHint": "Choose one of your companies, on the board or in the list, to give it orders. Hover over (or tap) any company to see it. Shift-click, or the Group button, selects several.",
     "battle.outOfReach": "Out of reach",
     "battle.against": "Against {d}",
     "battle.expect": "Expected: about {dmg} damage (they have {hp})",
@@ -359,7 +359,8 @@
     "mod.outOfReach": "out of reach",
     "aim.wind": "Wind",
     "terrain.bridge": "bridge",
-    "mod.onBridge": "on a bridge"
+    "mod.onBridge": "on a bridge",
+    "battle.groupTap": "Group"
   },
   "es": {
     "title.name": "Espadas de Hispania",
@@ -415,7 +416,7 @@
     "battle.next": "Siguiente compañía (Tab)",
     "battle.chronicle": "Crónica",
     "battle.order": "Orden",
-    "battle.selectHint": "Elige una de tus compañías, en el tablero o en la lista, para darle órdenes. Pasa el ratón por encima de cualquier compañía para verla.",
+    "battle.selectHint": "Elige una de tus compañías, en el tablero o en la lista, para darle órdenes. Pasa el ratón (o toca) cualquier compañía para verla. Mayús + clic, o el botón Grupo, elige varias.",
     "battle.outOfReach": "Fuera de alcance",
     "battle.against": "Contra {d}",
     "battle.expect": "Previsión: unos {dmg} de daño (les quedan {hp})",
@@ -721,6 +722,7 @@
     "mod.outOfReach": "fuera de alcance",
     "aim.wind": "Viento",
     "terrain.bridge": "puente",
-    "mod.onBridge": "en el puente"
+    "mod.onBridge": "en el puente",
+    "battle.groupTap": "Grupo"
   }
 }
