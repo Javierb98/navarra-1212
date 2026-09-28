@@ -1,0 +1,84 @@
+{
+  "id": "atapuerca_1054",
+  "anio": 1054,
+  "titulo": "Atapuerca",
+  "lugar": "Sierra de Atapuerca, tierra de Burgos",
+  "fecha": "1 de septiembre de 1054",
+  "resumen": "Enfrente no hay moros ni francos: está tu hermano. García Sánchez de Pamplona y Fernando de León han ido acumulando agravios sobre la frontera de Castilla hasta que ya no quedaba forma de deshacerlos hablando. Los dos ejércitos rezan al mismo santo. Uno de los dos reyes no va a volver.",
+  "nota_historica": "García Sánchez III el de Nájera murió en el campo de Atapuerca luchando contra su hermano Fernando I de León y Castilla. Se cuenta que Fernando ordenó que el cuerpo fuese llevado con honores a Santa María la Real de Nájera, la iglesia que el propio García había fundado. Pamplona no fue anexionada: el hijo del muerto, Sancho IV el de Peñalén, quedó como rey, pero el reino perdió terreno por el oeste y entró en la órbita castellana. La independencia navarra empezó a estrecharse aquel día.",
+  "advertencia": "Llamar «Reconquista» a estos siglos oculta que los reyes cristianos pasaron buena parte de ellos matándose entre sí. Atapuerca está en la campaña justamente por eso.",
+  "fuentes": [
+    "Crónica najerense",
+    "Historia Silense",
+    "Rodrigo Jiménez de Rada, De rebus Hispaniae, lib. VI"
+  ],
+  "bando_jugador": {
+    "nombre": "Reino de Pamplona",
+    "color": "#8c2f1f",
+    "heraldica": "res://assets/heraldry/pamplona.svg"
+  },
+  "bando_enemigo": {
+    "nombre": "León y Castilla",
+    "color": "#6b1f4a",
+    "heraldica": "res://assets/heraldry/leon.svg"
+  },
+  "comandante": {
+    "nombre": "García Sánchez III",
+    "habilidad": "La mesnada del rey",
+    "habilidad_desc": "El estandarte real se adelanta. Durante una ronda vuestras cargas golpean con el doble de fuerza.",
+    "efecto": "carga"
+  },
+  "terreno": {
+    "nombre": "Falda de la sierra",
+    "escenografia": "campo",
+    "desc": "Campo despejado con la sierra a la espalda. Terreno de caballeros, y los dos bandos lo saben.",
+    "mods": {
+      "caballeria": 1.1,
+      "peones": 1.0,
+      "ballesteros": 0.95,
+      "almogavares": 0.95
+    },
+    "alas": [1.0, 1.05, 1.0]
+  },
+  "rondas_max": 9,
+  "umbral_ruptura": 26,
+  "umbral_ruptura_enemigo": 44,
+  "objetivo": { "tipo": "romper" },
+  "ia": { "agresividad": 0.65, "astucia": 0.75 },
+  "unidades_jugador": [
+    {
+      "id": "nav_rey", "nombre": "Mesnada del rey García", "tipo": "caballeria",
+      "ala": 1, "fuerza": 300, "moral": 95, "mod_moral": 1.25
+    },
+    {
+      "id": "nav_infanzones", "nombre": "Infanzones de Nájera", "tipo": "caballeria",
+      "ala": 0, "fuerza": 240, "moral": 88
+    },
+    {
+      "id": "nav_peones", "nombre": "Peonaje de la Ribera", "tipo": "peones",
+      "ala": 2, "fuerza": 460, "moral": 80
+    },
+    {
+      "id": "nav_ballestas", "nombre": "Ballesteros de Pamplona", "tipo": "ballesteros",
+      "ala": 1, "fuerza": 220, "moral": 82
+    }
+  ],
+  "unidades_enemigo": [
+    {
+      "id": "cas_fernando", "nombre": "Mesnada de Fernando I", "tipo": "caballeria",
+      "ala": 1, "fuerza": 320, "moral": 96, "mod_moral": 1.3
+    },
+    {
+      "id": "cas_castellanos", "nombre": "Caballeros castellanos", "tipo": "caballeria",
+      "ala": 0, "fuerza": 260, "moral": 90
+    },
+    {
+      "id": "leo_peones", "nombre": "Peonaje leonés", "tipo": "peones",
+      "ala": 2, "fuerza": 460, "moral": 84
+    },
+    {
+      "id": "cas_ballestas", "nombre": "Ballesteros de Burgos", "tipo": "ballesteros",
+      "ala": 1, "fuerza": 240, "moral": 85
+    }
+  ]
+}

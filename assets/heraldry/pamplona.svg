@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" width="200" height="240">
+  <!-- Identifying device for the early kingdom of Pamplona. NOT real arms:
+       heraldry proper does not exist yet in the 9th and 10th centuries. See
+       docs/ARTE.md — these early shields are a readability tool, and the game
+       says so on the page where they appear. -->
+  <defs>
+    <clipPath id="shield">
+      <path d="M8,8 H192 V140 C192,198 100,232 100,232 C100,232 8,198 8,140 Z"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#shield)">
+    <rect width="200" height="240" fill="#9c2b1b"/>
+    <g fill="#c9a227">
+      <rect x="88" y="34" width="24" height="150"/>
+      <rect x="34" y="86" width="132" height="24"/>
+    </g>
+    <circle cx="100" cy="98" r="17" fill="#9c2b1b" stroke="#c9a227" stroke-width="6"/>
+  </g>
+  <path d="M8,8 H192 V140 C192,198 100,232 100,232 C100,232 8,198 8,140 Z"
+        fill="none" stroke="#2b2118" stroke-width="6"/>
+</svg>

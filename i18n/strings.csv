@@ -1,0 +1,79 @@
+keys,es,en
+UNIT_PEONES,Peonaje,Spearmen
+UNIT_BALLESTEROS,Ballesteros,Crossbowmen
+UNIT_CABALLERIA,Caballería,Heavy horse
+UNIT_ALMOGAVARES,Almogávares,Light foot
+UNIT_JINETES,Jinetes,Light horse
+ORDER_MANTENER,Mantener,Hold
+ORDER_MANTENER_DESC,"Clavarse en el sitio. Poco daño, mucha resistencia, y las lanzas que aguantan destrozan una carga.","Stand fast. Little damage, high resistance — and braced spears wreck a charge."
+ORDER_AVANZAR,Avanzar,Advance
+ORDER_AVANZAR_DESC,Cerrar con el enemigo y pelear de igual a igual.,Close with the enemy and fight them straight.
+ORDER_CARGAR,Cargar,Charge
+ORDER_CARGAR_DESC,"Todo el peso encima. Golpe demoledor, pero quedáis abiertos y agotados.","Everything you have. Devastating, but it leaves you open and blown."
+ORDER_HOSTIGAR,Hostigar,Skirmish
+ORDER_HOSTIGAR_DESC,Disparar antes de que nadie cierre. Sin respuesta enemiga.,Shoot before anyone closes. Nothing comes back at you.
+ORDER_REPLEGAR,Replegarse,Fall back
+ORDER_REPLEGAR_DESC,"Ceder terreno para recobrar el aliento y el ánimo. No hacéis daño.","Give ground to get your breath and nerve back. You deal no damage."
+STATE_FIRME,Firme,Steady
+STATE_VACILANTE,Vacilante,Wavering
+STATE_HUIDO,Rota,Broken
+EV_RONDA,— Ronda {0} —,— Round {0} —
+EV_DISPARO,{0} descarga sobre {1}: {2} bajas.,{0} looses on {1}: {2} down.
+EV_CHOQUE,{0} choca con {1}: {2} bajas.,{0} clashes with {1}: {2} down.
+EV_FLANQUEO,{0} cae sobre el flanco de {1}: {2} bajas.,{0} takes {1} in the flank: {2} down.
+EV_ROTA,¡{0} rompe filas y huye!,{0} breaks and runs!
+EV_AGOTAMIENTO,{0} no puede más.,{0} is spent.
+EV_HABILIDAD,{0} ordena: ¡{1}!,{0} orders: {1}!
+END_ENEMIGO_ROTO,El ejército enemigo se deshace y huye del campo.,The enemy army comes apart and quits the field.
+END_OBJETIVO,El objetivo ha caído.,The objective has fallen.
+END_EJERCITO_ROTO,Vuestra hueste se ha deshecho.,Your host has come apart.
+END_SIN_TIEMPO,Cae la tarde sin decidir nada.,Evening falls with nothing decided.
+END_RESISTIDO,Habéis aguantado. La hueste sale del campo entera.,You held. The host leaves the field intact.
+GOAL_ROMPER,Romper al ejército enemigo,Break the enemy army
+GOAL_SOBREVIVIR,Aguantar hasta poder retirarse,Hold out long enough to withdraw
+GOAL_OBJETIVO_UNIDAD,Destruir el objetivo,Destroy the objective
+TITLE,Las Cadenas de Navarra,The Chains of Navarre
+SUBTITLE,Siete batallas del viejo reino,Seven battles of the old kingdom
+PRESS_START,Pulsa START,Press START
+INSERT_COIN,Inserta moneda,Insert coin
+MENU_CAMPAIGN,La crónica,The chronicle
+MENU_LOCKED,Cerrado,Locked
+MENU_CLEARED,Ganada,Won
+MENU_BEST,Mejor: {0},Best: {0}
+BRIEF_TITLE,Antes de la batalla,Before the battle
+BRIEF_TERRAIN,Terreno,Ground
+BRIEF_OBJECTIVE,Objetivo,Objective
+BRIEF_COMMANDER,Al mando,In command
+BRIEF_YOUR_HOST,Vuestra hueste,Your host
+BRIEF_ENEMY_HOST,La hueste enemiga,The enemy host
+BRIEF_ROUNDS,Rondas: {0},Rounds: {0}
+BRIEF_BEGIN,Comenzar,Begin
+BATTLE_ROUND,Ronda {0} de {1},Round {0} of {1}
+BATTLE_WING_LEFT,Ala izquierda,Left wing
+BATTLE_WING_CENTRE,Centro,Centre
+BATTLE_WING_RIGHT,Ala derecha,Right wing
+BATTLE_MORALE,Ánimo,Morale
+BATTLE_FATIGUE,Fatiga,Fatigue
+BATTLE_STRENGTH,Hombres,Men
+BATTLE_ORDERS,Órdenes,Orders
+BATTLE_CHRONICLE,Crónica,Chronicle
+BATTLE_COMMIT,Dar la orden,Give the order
+BATTLE_ABILITY_READY,{0} — disponible,{0} — ready
+BATTLE_ABILITY_SPENT,Ya empleada,Already spent
+BATTLE_YOUR_ARMY,Vuestra hueste,Your host
+BATTLE_ENEMY_ARMY,El enemigo,The enemy
+AFTER_VICTORY,Victoria,Victory
+AFTER_DEFEAT,Derrota,Defeat
+AFTER_ROUNDS,Rondas: {0},Rounds: {0}
+AFTER_OWN_LOSSES,Bajas propias: {0},Your losses: {0}
+AFTER_ENEMY_LOSSES,Bajas enemigas: {0},Enemy losses: {0}
+AFTER_SURVIVORS,Supervivientes: {0},Survivors: {0}
+AFTER_SCORE,Puntuación: {0},Score: {0}
+AFTER_HISTORY,Lo que ocurrió,What actually happened
+AFTER_CAVEAT,Sobre la leyenda,On the legend
+AFTER_SOURCES,Fuentes,Sources
+AFTER_CONTINUE,Continuar,Continue
+HINT_MOVE,Palanca: elegir compañía y orden,Stick: pick company and order
+HINT_COMMIT,B3: dar la orden,B3: give the order
+HINT_ABILITY,B4: habilidad del capitán,B4: commander's ability
+HINT_BACK,B2: volver,B2: back

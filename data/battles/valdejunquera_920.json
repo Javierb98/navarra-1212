@@ -1,0 +1,87 @@
+{
+  "id": "valdejunquera_920",
+  "anio": 920,
+  "titulo": "Valdejunquera",
+  "lugar": "Val de Junquera, tierra de Muez",
+  "fecha": "26 de julio de 920",
+  "resumen": "Abd al-Rahman III ha subido en persona con el ejército de Córdoba. Sancho Garcés y Ordoño de León le salen al paso en campo abierto, y el campo abierto es exactamente donde el califa quiere pelear. Esta batalla no se gana. Sácala del valle: cada compañía que salga entera es una compañía que defenderá Pamplona mañana.",
+  "nota_historica": "La campaña de Muez fue un desastre para los cristianos. El ejército de Sancho Garcés I y Ordoño II de León se deshizo, y entre los prisioneros estaban los obispos Dulcidio de Salamanca y Hermogio de Tuy, llevados a Córdoba. Al-Nasir tomó después la fortaleza de Muez y mandó ejecutar a su guarnición. Sancho Garcés conservó el reino, se rehizo y tres años más tarde estaba tomando Nájera.",
+  "advertencia": "Se incluye una derrota a propósito. Una campaña que sólo encadena victorias enseña una historia falsa: la frontera se perdía tantas veces como se ganaba.",
+  "fuentes": [
+    "Ibn Hayyan, al-Muqtabis V",
+    "Crónica de Sampiro",
+    "Sampiro y los Anales Castellanos sobre el cautiverio de los obispos"
+  ],
+  "bando_jugador": {
+    "nombre": "Pamplona y León",
+    "color": "#8c2f1f",
+    "heraldica": "res://assets/heraldry/pamplona.svg"
+  },
+  "bando_enemigo": {
+    "nombre": "Ejército de Córdoba",
+    "color": "#1f6b52",
+    "heraldica": "res://assets/heraldry/cordoba.svg"
+  },
+  "comandante": {
+    "nombre": "Sancho Garcés I",
+    "habilidad": "Retirada en orden",
+    "habilidad_desc": "Escudos arriba y paso corto. Durante una ronda la hueste encaja los golpes como un muro.",
+    "efecto": "muro"
+  },
+  "terreno": {
+    "nombre": "Valle abierto",
+    "escenografia": "campo",
+    "desc": "Tierra llana de junqueras. Sitio de sobra para que la caballería ligera cordobesa te rodee cuantas veces quiera.",
+    "mods": {
+      "caballeria": 1.15,
+      "jinetes": 1.25,
+      "almogavares": 0.85,
+      "ballesteros": 1.1
+    },
+    "alas": [0.95, 1.0, 0.95]
+  },
+  "rondas_max": 8,
+  "umbral_ruptura": 33,
+  "objetivo": { "tipo": "sobrevivir", "valor": 6 },
+  "ia": { "agresividad": 0.75, "astucia": 0.7 },
+  "unidades_jugador": [
+    {
+      "id": "nav_mesnada", "nombre": "Mesnada del rey Sancho", "tipo": "caballeria",
+      "ala": 1, "fuerza": 260, "moral": 90, "mod_moral": 1.2
+    },
+    {
+      "id": "nav_peones", "nombre": "Peonaje de Pamplona", "tipo": "peones",
+      "ala": 0, "fuerza": 450, "moral": 78
+    },
+    {
+      "id": "leo_peones", "nombre": "Hueste de Ordoño de León", "tipo": "peones",
+      "ala": 2, "fuerza": 420, "moral": 72
+    },
+    {
+      "id": "nav_ballestas", "nombre": "Ballesteros de Deyo", "tipo": "ballesteros",
+      "ala": 1, "fuerza": 200, "moral": 75
+    }
+  ],
+  "unidades_enemigo": [
+    {
+      "id": "cor_jinetes", "nombre": "Jinetes de la frontera", "tipo": "jinetes",
+      "ala": 0, "fuerza": 400, "moral": 95, "mod_ataque": 1.1
+    },
+    {
+      "id": "cor_guardia", "nombre": "Guardia del califa", "tipo": "caballeria",
+      "ala": 1, "fuerza": 340, "moral": 100, "mod_moral": 1.35
+    },
+    {
+      "id": "cor_arqueros", "nombre": "Arqueros de Córdoba", "tipo": "ballesteros",
+      "ala": 2, "fuerza": 360, "moral": 92
+    },
+    {
+      "id": "cor_peones", "nombre": "Voluntarios de la fe", "tipo": "peones",
+      "ala": 2, "fuerza": 500, "moral": 85
+    },
+    {
+      "id": "cor_reserva", "nombre": "Reserva cordobesa", "tipo": "caballeria",
+      "ala": 0, "fuerza": 280, "moral": 90
+    }
+  ]
+}

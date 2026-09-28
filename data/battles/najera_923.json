@@ -1,0 +1,83 @@
+{
+  "id": "najera_923",
+  "anio": 923,
+  "titulo": "Nájera y Viguera",
+  "lugar": "La Rioja, alto Ebro",
+  "fecha": "923",
+  "resumen": "Tres años después de Valdejunquera, Sancho Garcés baja al Ebro a cobrarse la cuenta. Nájera ha caído ya; queda el alcázar de Viguera, encaramado sobre el río, con la guarnición dentro y la puerta cerrada. Mientras esa torre siga en pie no hay Rioja navarra. Rompe la guarnición del alcázar.",
+  "nota_historica": "En 923 Sancho Garcés I, otra vez junto a Ordoño II de León, tomó Nájera y Viguera y desmontó el poder de los Banu Qasi en el alto Ebro. Fue el mayor ensanche del reino de Pamplona hasta entonces: la Rioja quedó incorporada y Nájera acabaría siendo residencia real. El mismo rey que había sido barrido en el valle de Junquera murió en 925 dueño de la ribera.",
+  "advertencia": "",
+  "fuentes": [
+    "Crónica de Sampiro",
+    "Ibn Hayyan, al-Muqtabis V",
+    "Códice de Roda"
+  ],
+  "bando_jugador": {
+    "nombre": "Reino de Pamplona",
+    "color": "#8c2f1f",
+    "heraldica": "res://assets/heraldry/pamplona.svg"
+  },
+  "bando_enemigo": {
+    "nombre": "Guarnición del alcázar",
+    "color": "#1f6b52",
+    "heraldica": "res://assets/heraldry/banu_qasi.svg"
+  },
+  "comandante": {
+    "nombre": "Sancho Garcés I",
+    "habilidad": "Asalto a la puerta",
+    "habilidad_desc": "Escalas al muro y hacha a la puerta. Durante una ronda vuestras cargas golpean con el doble de fuerza.",
+    "efecto": "carga"
+  },
+  "terreno": {
+    "nombre": "Alcázar sobre el río",
+    "escenografia": "muralla",
+    "desc": "Muro de piedra, una sola rampa de acceso y ballesteros arriba con todo el tiempo del mundo para apuntar.",
+    "mods": {
+      "ballesteros": 1.35,
+      "caballeria": 0.55,
+      "peones": 1.0,
+      "almogavares": 1.15
+    },
+    "alas": [0.9, 1.15, 0.9]
+  },
+  "rondas_max": 10,
+  "umbral_ruptura": 28,
+  "objetivo": { "tipo": "objetivo_unidad", "unidad": "vig_guarnicion" },
+  "ia": { "agresividad": 0.25, "astucia": 0.6 },
+  "unidades_jugador": [
+    {
+      "id": "pam_asalto", "nombre": "Peonaje de asalto", "tipo": "peones",
+      "ala": 1, "fuerza": 480, "moral": 88, "mod_ataque": 1.1
+    },
+    {
+      "id": "pam_escalas", "nombre": "Montañeses con escalas", "tipo": "almogavares",
+      "ala": 0, "fuerza": 300, "moral": 85
+    },
+    {
+      "id": "pam_ballestas", "nombre": "Ballesteros de Nájera", "tipo": "ballesteros",
+      "ala": 2, "fuerza": 260, "moral": 84
+    },
+    {
+      "id": "leo_mesnada", "nombre": "Caballeros de Ordoño II", "tipo": "caballeria",
+      "ala": 2, "fuerza": 220, "moral": 86
+    }
+  ],
+  "unidades_enemigo": [
+    {
+      "id": "vig_guarnicion", "nombre": "Guarnición del alcázar", "tipo": "peones",
+      "ala": 1, "fuerza": 340, "moral": 95, "mod_moral": 1.4
+    },
+    {
+      "id": "vig_ballestas", "nombre": "Ballesteros del adarve", "tipo": "ballesteros",
+      "ala": 0, "fuerza": 280, "moral": 90, "mod_ataque": 1.2
+    },
+    {
+      "id": "vig_arqueros", "nombre": "Arqueros de la torre", "tipo": "ballesteros",
+      "ala": 2, "fuerza": 240, "moral": 88, "mod_ataque": 1.15
+    },
+    {
+      "id": "vig_salida", "nombre": "Jinetes de salida", "tipo": "jinetes",
+      "ala": 1, "fuerza": 160, "moral": 82
+    }
+  ]
+}

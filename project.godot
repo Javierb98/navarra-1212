@@ -1,0 +1,52 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="1212 — Las Cadenas de Navarra"
+config/description="Batallas históricas del Reino de Navarra, al estilo de 1066."
+run/main_scene="res://scenes/boot.tscn"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+boot_splash/bg_color=Color(0.078, 0.067, 0.055, 1)
+boot_splash/show_image=false
+config/icon="res://icon.svg"
+
+[autoload]
+
+Cfg="*res://src/autoload/cfg.gd"
+Loc="*res://src/autoload/loc.gd"
+ArcadeInput="*res://src/autoload/arcade_input.gd"
+GameState="*res://src/autoload/game_state.gd"
+Attract="*res://src/autoload/attract.gd"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/mode="canvas_items"
+
+[file_customization]
+
+folder_colors={
+"res://assets/": "orange",
+"res://data/": "green",
+"res://docs/": "gray",
+"res://src/": "blue"
+}
+
+[internationalization]
+
+locale/fallback="es"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true

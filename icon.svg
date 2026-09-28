@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <!-- Project icon: the chains, on parchment. -->
+  <rect width="128" height="128" rx="10" fill="#e8dcc0"/>
+  <circle cx="64" cy="64" r="52" fill="#9c2b1b"/>
+  <g stroke="#c9a227" stroke-width="5" stroke-dasharray="7 4" stroke-linecap="round" fill="none">
+    <line x1="64" y1="12" x2="64" y2="116"/>
+    <line x1="12" y1="64" x2="116" y2="64"/>
+    <line x1="27" y1="27" x2="101" y2="101"/>
+    <line x1="101" y1="27" x2="27" y2="101"/>
+    <circle cx="64" cy="64" r="34"/>
+  </g>
+  <circle cx="64" cy="64" r="9" fill="#2e7d55" stroke="#c9a227" stroke-width="3"/>
+</svg>

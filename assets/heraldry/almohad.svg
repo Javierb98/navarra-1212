@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" width="200" height="240">
+  <!-- Almohad device. Invented. The caliph's tent at Las Navas is described as
+       red, and the palisade around it is the thing the player has to break, so
+       the shield carries a ring of stakes around a central star. -->
+  <defs>
+    <clipPath id="shield">
+      <path d="M8,8 H192 V140 C192,198 100,232 100,232 C100,232 8,198 8,140 Z"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#shield)">
+    <rect width="200" height="240" fill="#7d1f1f"/>
+    <g fill="none" stroke="#f4ecd8" stroke-width="9" stroke-dasharray="6 10" stroke-linecap="round">
+      <circle cx="100" cy="110" r="76"/>
+    </g>
+    <g fill="none" stroke="#f4ecd8" stroke-width="10">
+      <rect x="58" y="68" width="84" height="84"/>
+      <rect x="58" y="68" width="84" height="84" transform="rotate(45 100 110)"/>
+    </g>
+  </g>
+  <path d="M8,8 H192 V140 C192,198 100,232 100,232 C100,232 8,198 8,140 Z"
+        fill="none" stroke="#2b2118" stroke-width="6"/>
+</svg>

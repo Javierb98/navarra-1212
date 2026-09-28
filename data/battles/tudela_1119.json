@@ -1,0 +1,83 @@
+{
+  "id": "tudela_1119",
+  "anio": 1119,
+  "titulo": "La toma de Tudela",
+  "lugar": "Tudela, ribera del Ebro",
+  "fecha": "febrero de 1119",
+  "resumen": "Zaragoza cayó en diciembre. Ahora el Batallador baja el Ebro y se planta delante de Tudela, la vieja capital de los Banu Qasi, la llave de toda la ribera. Las torres están artilladas de ballesteros y el terreno hasta el muro está descubierto. Cruza esa explanada con los escudos en alto y revienta la puerta.",
+  "nota_historica": "Alfonso I el Batallador, rey de Aragón y de Pamplona, tomó Tudela en febrero de 1119, semanas después de Zaragoza. No hubo matanza: a la población musulmana se le concedió un fuero que le permitía quedarse, conservar su ley y su religión, a cambio de trasladarse a los arrabales en el plazo de un año y pagar sus tributos. Ese pacto mantuvo en Tudela una comunidad mudéjar con carta de derechos durante siglos, junto a la judería y a los pobladores cristianos.",
+  "advertencia": "La imagen de una frontera de exterminio no cuadra con lo que hicieron los propios conquistadores: la mudéjar de Tudela siguió allí, con carta de derechos, mucho después de la conquista.",
+  "fuentes": [
+    "Fuero de Tudela (1119)",
+    "Crónica de San Juan de la Peña",
+    "José María Lacarra, La reconquista y repoblación del valle del Ebro"
+  ],
+  "bando_jugador": {
+    "nombre": "Aragón y Pamplona",
+    "color": "#8c2f1f",
+    "heraldica": "res://assets/heraldry/batallador.svg"
+  },
+  "bando_enemigo": {
+    "nombre": "Tudela almorávide",
+    "color": "#1f6b52",
+    "heraldica": "res://assets/heraldry/almoravid.svg"
+  },
+  "comandante": {
+    "nombre": "Alfonso I el Batallador",
+    "habilidad": "Muro de escudos",
+    "habilidad_desc": "Escudos sobre las cabezas para cruzar la explanada. Durante una ronda encajáis los golpes como piedra.",
+    "efecto": "muro"
+  },
+  "terreno": {
+    "nombre": "Muralla y explanada",
+    "escenografia": "muralla",
+    "desc": "Campo abierto batido desde las torres. Los caballos no sirven de nada contra la piedra.",
+    "mods": {
+      "ballesteros": 1.3,
+      "caballeria": 0.6,
+      "peones": 1.05,
+      "almogavares": 1.2
+    },
+    "alas": [0.95, 1.1, 0.95]
+  },
+  "rondas_max": 10,
+  "umbral_ruptura": 30,
+  "objetivo": { "tipo": "objetivo_unidad", "unidad": "tud_puerta" },
+  "ia": { "agresividad": 0.3, "astucia": 0.65 },
+  "unidades_jugador": [
+    {
+      "id": "ara_asalto", "nombre": "Peonaje del Batallador", "tipo": "peones",
+      "ala": 1, "fuerza": 520, "moral": 92, "mod_ataque": 1.1, "mod_moral": 1.15
+    },
+    {
+      "id": "ara_escalas", "nombre": "Gente de escalas", "tipo": "almogavares",
+      "ala": 0, "fuerza": 320, "moral": 88
+    },
+    {
+      "id": "ara_ballestas", "nombre": "Ballesteros aragoneses", "tipo": "ballesteros",
+      "ala": 2, "fuerza": 300, "moral": 86, "mod_ataque": 1.1
+    },
+    {
+      "id": "nav_mesnada", "nombre": "Mesnada navarra", "tipo": "caballeria",
+      "ala": 2, "fuerza": 240, "moral": 90
+    }
+  ],
+  "unidades_enemigo": [
+    {
+      "id": "tud_puerta", "nombre": "Guardia de la puerta", "tipo": "peones",
+      "ala": 1, "fuerza": 380, "moral": 95, "mod_moral": 1.45
+    },
+    {
+      "id": "tud_torres", "nombre": "Ballesteros de las torres", "tipo": "ballesteros",
+      "ala": 0, "fuerza": 320, "moral": 92, "mod_ataque": 1.25
+    },
+    {
+      "id": "tud_adarve", "nombre": "Arqueros del adarve", "tipo": "ballesteros",
+      "ala": 2, "fuerza": 300, "moral": 90, "mod_ataque": 1.2
+    },
+    {
+      "id": "tud_almoravides", "nombre": "Jinetes almorávides", "tipo": "jinetes",
+      "ala": 1, "fuerza": 200, "moral": 88
+    }
+  ]
+}

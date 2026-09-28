@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" width="200" height="240">
+  <!-- Umayyad Córdoba. Invented device: a horseshoe arch, the one form that
+       reads instantly as al-Andalus, over the green of the dynasty. -->
+  <defs>
+    <clipPath id="shield">
+      <path d="M8,8 H192 V140 C192,198 100,232 100,232 C100,232 8,198 8,140 Z"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#shield)">
+    <rect width="200" height="240" fill="#1f6b52"/>
+    <path d="M58,180 L58,104 A42,46 0 0 1 142,104 L142,180"
+          fill="none" stroke="#e8dcc0" stroke-width="15"/>
+    <circle cx="100" cy="52" r="15" fill="#c9a227"/>
+  </g>
+  <path d="M8,8 H192 V140 C192,198 100,232 100,232 C100,232 8,198 8,140 Z"
+        fill="none" stroke="#2b2118" stroke-width="6"/>
+</svg>

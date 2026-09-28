@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" width="200" height="240">
+  <!-- Aragón: or, four pales gules. The one shield here that is close to real
+       for its date — the pales are attested from the 12th century, which is
+       roughly when Alfonso I was taking Tudela. -->
+  <defs>
+    <clipPath id="shield">
+      <path d="M8,8 H192 V140 C192,198 100,232 100,232 C100,232 8,198 8,140 Z"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#shield)">
+    <rect width="200" height="240" fill="#e8c34a"/>
+    <g fill="#9c2b1b">
+      <rect x="28" y="0" width="22" height="240"/>
+      <rect x="72" y="0" width="22" height="240"/>
+      <rect x="116" y="0" width="22" height="240"/>
+      <rect x="160" y="0" width="22" height="240"/>
+    </g>
+  </g>
+  <path d="M8,8 H192 V140 C192,198 100,232 100,232 C100,232 8,198 8,140 Z"
+        fill="none" stroke="#2b2118" stroke-width="6"/>
+</svg>

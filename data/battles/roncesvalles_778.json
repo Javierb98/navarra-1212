@@ -1,0 +1,83 @@
+{
+  "id": "roncesvalles_778",
+  "anio": 778,
+  "titulo": "Roncesvalles",
+  "lugar": "Puerto de Ibañeta, Pirineo navarro",
+  "fecha": "15 de agosto de 778",
+  "resumen": "Carlomagno vuelve de Zaragoza con las manos vacías y ha derribado las murallas de Pamplona al pasar. Su ejército se estira por el desfiladero en columna, y la retaguardia queda sola entre las peñas. Los montañeses conocen cada revuelta del camino. Espera arriba, deja que la columna se meta en la garganta y caed sobre ella.",
+  "nota_historica": "Einhardo, biógrafo de Carlomagno, reconoce el desastre: la retaguardia franca fue aniquilada en la montaña y entre los muertos estaban Eggihardo, senescal real, Anselmo, conde palatino, y Hruodlando (Roldán), prefecto de la Marca de Bretaña. Los atacantes fueron vascones, no musulmanes. El botín se perdió y los agresores se dispersaron en la noche sin que los francos pudieran perseguirlos.",
+  "advertencia": "La Chanson de Roland, escrita hacia 1100, convierte a los vascones en sarracenos y a una emboscada en una batalla campal de héroes. Esa versión es literatura, no crónica: aquí se juega lo que registran las fuentes carolingias.",
+  "fuentes": [
+    "Einhardo, Vita Karoli Magni, cap. 9",
+    "Annales regni Francorum, año 778",
+    "Epitafio de Eggihardo (indica la fecha del 15 de agosto)"
+  ],
+  "bando_jugador": {
+    "nombre": "Vascones",
+    "color": "#8c2f1f",
+    "heraldica": "res://assets/heraldry/vascones.svg"
+  },
+  "bando_enemigo": {
+    "nombre": "Retaguardia franca",
+    "color": "#2f4a7a",
+    "heraldica": "res://assets/heraldry/franks.svg"
+  },
+  "comandante": {
+    "nombre": "Capitanes de la montaña",
+    "habilidad": "Emboscada",
+    "habilidad_desc": "Caed desde las peñas antes de que puedan formar. Durante una ronda, todos vuestros golpes valen el doble.",
+    "efecto": "emboscada"
+  },
+  "terreno": {
+    "nombre": "Desfiladero",
+    "escenografia": "desfiladero",
+    "desc": "Un camino de carro entre paredes de roca. Los caballos no pueden maniobrar y la columna no puede desplegarse.",
+    "mods": {
+      "caballeria": 0.5,
+      "almogavares": 1.3,
+      "peones": 1.05,
+      "ballesteros": 0.9
+    },
+    "alas": [1.1, 0.9, 1.1]
+  },
+  "rondas_max": 8,
+  "umbral_ruptura": 30,
+  "objetivo": { "tipo": "romper" },
+  "ia": { "agresividad": 0.35, "astucia": 0.3 },
+  "unidades_jugador": [
+    {
+      "id": "vas_alto", "nombre": "Montañeses de Ibañeta", "tipo": "almogavares",
+      "ala": 0, "fuerza": 320, "moral": 95, "mod_ataque": 1.15
+    },
+    {
+      "id": "vas_camino", "nombre": "Peonaje de Auritz", "tipo": "peones",
+      "ala": 1, "fuerza": 400, "moral": 90
+    },
+    {
+      "id": "vas_hondas", "nombre": "Honderos y venablos", "tipo": "jinetes",
+      "ala": 2, "fuerza": 210, "moral": 88, "mod_ataque": 1.1
+    },
+    {
+      "id": "vas_reserva", "nombre": "Gente de los valles", "tipo": "almogavares",
+      "ala": 1, "fuerza": 260, "moral": 85
+    }
+  ],
+  "unidades_enemigo": [
+    {
+      "id": "fra_escolta", "nombre": "Escolta de Roldán", "tipo": "caballeria",
+      "ala": 0, "fuerza": 240, "moral": 95, "mod_moral": 1.2
+    },
+    {
+      "id": "fra_impedimenta", "nombre": "Guardia del bagaje", "tipo": "peones",
+      "ala": 1, "fuerza": 380, "moral": 75
+    },
+    {
+      "id": "fra_arqueros", "nombre": "Arqueros francos", "tipo": "ballesteros",
+      "ala": 2, "fuerza": 200, "moral": 80
+    },
+    {
+      "id": "fra_palatinos", "nombre": "Condes palatinos", "tipo": "caballeria",
+      "ala": 1, "fuerza": 180, "moral": 100, "mod_moral": 1.3
+    }
+  ]
+}

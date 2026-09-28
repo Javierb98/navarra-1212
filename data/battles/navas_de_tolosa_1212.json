@@ -1,0 +1,97 @@
+{
+  "id": "navas_de_tolosa_1212",
+  "anio": 1212,
+  "titulo": "Las Navas de Tolosa",
+  "lugar": "Sierra Morena, cerro de los Olivares",
+  "fecha": "16 de julio de 1212",
+  "resumen": "Castilla en el centro, Aragón a un lado, Navarra al otro. Enfrente, el campamento del califa al-Nasir, y en el corazón del campamento su tienda roja, cercada por un palenque y por su guardia negra, que según cuentan pelea encadenada entre sí para que nadie pueda huir. Las líneas cristianas se están rompiendo. Sancho el Fuerte mira ese palenque y decide que se entra por ahí.",
+  "nota_historica": "El 16 de julio de 1212 la coalición de Alfonso VIII de Castilla, Pedro II de Aragón y Sancho VII el Fuerte de Navarra destrozó al ejército almohade de Muhammad al-Nasir en las Navas de Tolosa. Fue la batalla que quebró el poder almohade en la península: en una generación cayeron Córdoba y Sevilla. Al rey navarro, que tenía cerca de dos metros de estatura y a quien la tradición atribuye la ruptura del cerco de la tienda califal, se le recuerda desde entonces con las cadenas.",
+  "advertencia": "El origen del escudo de Navarra es la parte legendaria de esta historia. Las cadenas aparecen documentadas como armas del reino bastante después de 1212, y los heraldistas suelen derivarlas de un emblema anterior de barras radiantes (un carbunclo o escarbunclo) al que más tarde se le buscó explicación en la batalla. Sancho VII estuvo en las Navas y cargó; que de allí salga el escudo es tradición, no crónica.",
+  "fuentes": [
+    "Rodrigo Jiménez de Rada, De rebus Hispaniae, lib. VIII (testigo presencial)",
+    "Carta de Alfonso VIII al papa Inocencio III, 1212",
+    "Ibn Idari, al-Bayan al-Mugrib",
+    "Martín Alvira Cabrer, Las Navas de Tolosa 1212"
+  ],
+  "bando_jugador": {
+    "nombre": "Navarra",
+    "color": "#8c2f1f",
+    "heraldica": "res://assets/heraldry/navarra.svg"
+  },
+  "bando_enemigo": {
+    "nombre": "Ejército almohade",
+    "color": "#1f6b52",
+    "heraldica": "res://assets/heraldry/almohad.svg"
+  },
+  "comandante": {
+    "nombre": "Sancho VII el Fuerte",
+    "habilidad": "Romper las cadenas",
+    "habilidad_desc": "Al palenque, y que nadie se pare. Durante una ronda vuestras cargas golpean con el doble de fuerza.",
+    "efecto": "carga"
+  },
+  "terreno": {
+    "nombre": "Cerro del campamento",
+    "escenografia": "campamento",
+    "desc": "Cuesta arriba, entre olivares y el palenque de estacas que cierra la tienda del califa.",
+    "mods": {
+      "caballeria": 1.05,
+      "peones": 1.0,
+      "ballesteros": 0.9,
+      "almogavares": 1.15
+    },
+    "alas": [1.0, 1.1, 1.0]
+  },
+  "rondas_max": 10,
+  "umbral_ruptura": 24,
+  "umbral_ruptura_enemigo": 34,
+  "objetivo": { "tipo": "objetivo_unidad", "unidad": "alm_guardia" },
+  "ia": { "agresividad": 0.6, "astucia": 0.8 },
+  "unidades_jugador": [
+    {
+      "id": "nav_sancho", "nombre": "Mesnada de Sancho el Fuerte", "tipo": "caballeria",
+      "ala": 1, "fuerza": 320, "moral": 100, "mod_ataque": 1.2, "mod_moral": 1.4
+    },
+    {
+      "id": "nav_infanzones", "nombre": "Infanzones navarros", "tipo": "caballeria",
+      "ala": 0, "fuerza": 260, "moral": 92
+    },
+    {
+      "id": "nav_peones", "nombre": "Peonaje de las villas", "tipo": "peones",
+      "ala": 2, "fuerza": 480, "moral": 84
+    },
+    {
+      "id": "nav_almogavares", "nombre": "Almogávares del Pirineo", "tipo": "almogavares",
+      "ala": 2, "fuerza": 300, "moral": 88, "mod_ataque": 1.15
+    },
+    {
+      "id": "nav_ballestas", "nombre": "Ballesteros de Tudela", "tipo": "ballesteros",
+      "ala": 0, "fuerza": 240, "moral": 85
+    }
+  ],
+  "unidades_enemigo": [
+    {
+      "id": "alm_palenque", "nombre": "Palenque de estacas", "tipo": "peones",
+      "ala": 1, "fuerza": 260, "moral": 95, "mod_moral": 1.5
+    },
+    {
+      "id": "alm_guardia", "nombre": "Guardia encadenada del califa", "tipo": "peones",
+      "ala": 1, "fuerza": 420, "moral": 100, "mod_moral": 1.6, "mod_ataque": 1.1
+    },
+    {
+      "id": "alm_jinetes", "nombre": "Jinetes andalusíes", "tipo": "jinetes",
+      "ala": 0, "fuerza": 380, "moral": 88
+    },
+    {
+      "id": "alm_arqueros", "nombre": "Arqueros del campamento", "tipo": "ballesteros",
+      "ala": 2, "fuerza": 340, "moral": 86
+    },
+    {
+      "id": "alm_voluntarios", "nombre": "Voluntarios de la fe", "tipo": "peones",
+      "ala": 2, "fuerza": 520, "moral": 90
+    },
+    {
+      "id": "alm_caballeria", "nombre": "Caballería almohade", "tipo": "caballeria",
+      "ala": 0, "fuerza": 300, "moral": 90
+    }
+  ]
+}

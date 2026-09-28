@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" width="200" height="240">
+  <!-- León and Castile under Fernando I. The Castilian castle rather than the
+       Leonese lion, because a castle is built from rectangles and a lion is
+       not — the whole art strategy in one asset. Also still anachronistic in
+       1054: real arms arrive in the next century. -->
+  <defs>
+    <clipPath id="shield">
+      <path d="M8,8 H192 V140 C192,198 100,232 100,232 C100,232 8,198 8,140 Z"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#shield)">
+    <rect width="200" height="240" fill="#6b1f4a"/>
+    <g fill="#c9a227">
+      <rect x="40" y="96" width="120" height="76"/>
+      <rect x="34" y="62" width="30" height="40"/>
+      <rect x="85" y="48" width="30" height="54"/>
+      <rect x="136" y="62" width="30" height="40"/>
+      <rect x="34" y="52" width="10" height="12"/><rect x="54" y="52" width="10" height="12"/>
+      <rect x="85" y="38" width="10" height="12"/><rect x="105" y="38" width="10" height="12"/>
+      <rect x="136" y="52" width="10" height="12"/><rect x="156" y="52" width="10" height="12"/>
+    </g>
+    <path d="M84,172 L84,134 A16,16 0 0 1 116,134 L116,172 Z" fill="#6b1f4a"/>
+  </g>
+  <path d="M8,8 H192 V140 C192,198 100,232 100,232 C100,232 8,198 8,140 Z"
+        fill="none" stroke="#2b2118" stroke-width="6"/>
+</svg>

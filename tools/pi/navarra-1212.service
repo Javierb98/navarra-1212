@@ -1,0 +1,45 @@
+# Kiosk unit for the arcade cabinet.
+#
+#   sudo cp tools/pi/navarra-1212.service /etc/systemd/system/
+#   sudo systemctl enable --now navarra-1212
+#
+# Assumes Raspberry Pi OS Lite plus `cage`, a Wayland kiosk compositor:
+#   sudo apt install cage
+#
+# cage runs exactly one application fullscreen with no decorations, no cursor
+# and nothing else reachable — which is what you want on a cabinet with no
+# keyboard. On a full desktop image, use the autostart .desktop file described
+# in docs/DESPLIEGUE-PI.md instead of this unit.
+
+[Unit]
+Description=1212 — Las Cadenas de Navarra (arcade kiosk)
+After=systemd-user-sessions.service network.target
+Conflicts=getty@tty1.service
+
+[Service]
+Type=simple
+User=pi
+Group=pi
+WorkingDirectory=/home/pi/navarra
+
+# cage needs a seat and a TTY of its own.
+TTYPath=/dev/tty1
+TTYReset=yes
+TTYVHangup=yes
+StandardInput=tty-fail
+StandardOutput=journal
+StandardError=journal
+PAMName=login
+
+Environment=XDG_RUNTIME_DIR=/run/user/1000
+Environment=WLR_LIBINPUT_NO_DEVICES=1
+
+ExecStart=/usr/bin/cage -d -- /home/pi/navarra/navarra-1212 --fullscreen
+
+# A cabinet should recover from anything on its own; nobody is going to ssh in
+# during a party.
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target

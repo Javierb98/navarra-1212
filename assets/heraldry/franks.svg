@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" width="200" height="240">
+  <!-- Carolingian device. Invented: the fleur-de-lis belongs to the Capetians
+       centuries later, so this uses a plain cross and orb instead. -->
+  <defs>
+    <clipPath id="shield">
+      <path d="M8,8 H192 V140 C192,198 100,232 100,232 C100,232 8,198 8,140 Z"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#shield)">
+    <rect width="200" height="240" fill="#2f4a7a"/>
+    <g fill="#c9a227">
+      <rect x="86" y="28" width="28" height="128"/>
+      <rect x="44" y="70" width="112" height="28"/>
+    </g>
+    <circle cx="100" cy="180" r="22" fill="none" stroke="#c9a227" stroke-width="9"/>
+  </g>
+  <path d="M8,8 H192 V140 C192,198 100,232 100,232 C100,232 8,198 8,140 Z"
+        fill="none" stroke="#2b2118" stroke-width="6"/>
+</svg>

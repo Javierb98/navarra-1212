@@ -1,0 +1,83 @@
+{
+  "id": "roncesvalles_824",
+  "anio": 824,
+  "titulo": "Segundo Roncesvalles",
+  "lugar": "Puerto de Ibañeta, Pirineo navarro",
+  "fecha": "824",
+  "resumen": "Cuarenta y seis años después, los francos vuelven a subir el puerto. Ludovico Pío manda a los condes Eblo y Aznar Sánchez a someter Pamplona de una vez. Esta vez los montañeses no están solos: los Banu Qasi de Tudela, parientes por sangre de Íñigo Arista, esperan al otro lado del monte. De esta jornada nace un reino.",
+  "nota_historica": "Las fuentes árabes y francas coinciden: la expedición fue destruida en el mismo puerto. Eblo fue enviado cautivo a Córdoba; Aznar Sánchez fue puesto en libertad porque los vascones lo reconocieron como pariente. Tras 824 los francos renunciaron a controlar el alto Ebro, e Íñigo Arista quedó como primer rey de Pamplona. La alianza con los Banu Qasi, musulmanes y medio hermanos suyos, fue la que lo sostuvo.",
+  "advertencia": "Que el primer rey de Pamplona se apoyara en una familia musulmana no es una anomalía ni un dato incómodo: es como funcionaba la frontera. Los pactos cruzaban la religión con toda naturalidad.",
+  "fuentes": [
+    "Ibn Hayyan, al-Muqtabis (recogiendo a al-Razi)",
+    "Vita Hludovici (el Astrónomo), cap. 40",
+    "Códice de Roda, genealogías de los reyes de Pamplona"
+  ],
+  "bando_jugador": {
+    "nombre": "Pamploneses y Banu Qasi",
+    "color": "#8c2f1f",
+    "heraldica": "res://assets/heraldry/pamplona.svg"
+  },
+  "bando_enemigo": {
+    "nombre": "Hueste franca",
+    "color": "#2f4a7a",
+    "heraldica": "res://assets/heraldry/franks.svg"
+  },
+  "comandante": {
+    "nombre": "Íñigo Arista",
+    "habilidad": "Los Banu Qasi acuden",
+    "habilidad_desc": "Los jinetes de Tudela coronan la loma. Toda la hueste recobra el ánimo de golpe.",
+    "efecto": "moral"
+  },
+  "terreno": {
+    "nombre": "Puerto de montaña",
+    "escenografia": "desfiladero",
+    "desc": "Ladera abierta antes del collado. Hay sitio para formar, pero el caballo sigue peleando cuesta arriba.",
+    "mods": {
+      "caballeria": 0.65,
+      "almogavares": 1.25,
+      "peones": 1.05,
+      "jinetes": 1.1
+    },
+    "alas": [1.05, 1.0, 1.05]
+  },
+  "rondas_max": 9,
+  "umbral_ruptura": 30,
+  "objetivo": { "tipo": "romper" },
+  "ia": { "agresividad": 0.5, "astucia": 0.45 },
+  "unidades_jugador": [
+    {
+      "id": "pam_lanzas", "nombre": "Peonaje de Pamplona", "tipo": "peones",
+      "ala": 1, "fuerza": 420, "moral": 90
+    },
+    {
+      "id": "pam_monte", "nombre": "Montañeses de Aézcoa", "tipo": "almogavares",
+      "ala": 0, "fuerza": 300, "moral": 92, "mod_ataque": 1.1
+    },
+    {
+      "id": "qasi_jinetes", "nombre": "Jinetes de los Banu Qasi", "tipo": "jinetes",
+      "ala": 2, "fuerza": 240, "moral": 88, "mod_ataque": 1.15
+    },
+    {
+      "id": "pam_arqueros", "nombre": "Ballesteros del valle", "tipo": "ballesteros",
+      "ala": 1, "fuerza": 180, "moral": 85
+    }
+  ],
+  "unidades_enemigo": [
+    {
+      "id": "fra_eblo", "nombre": "Mesnada del conde Eblo", "tipo": "caballeria",
+      "ala": 0, "fuerza": 260, "moral": 92, "mod_moral": 1.15
+    },
+    {
+      "id": "fra_aznar", "nombre": "Gascones de Aznar Sánchez", "tipo": "peones",
+      "ala": 1, "fuerza": 400, "moral": 80
+    },
+    {
+      "id": "fra_arqueros", "nombre": "Arqueros de la marca", "tipo": "ballesteros",
+      "ala": 2, "fuerza": 220, "moral": 82
+    },
+    {
+      "id": "fra_leva", "nombre": "Leva de Aquitania", "tipo": "peones",
+      "ala": 2, "fuerza": 320, "moral": 70
+    }
+  ]
+}

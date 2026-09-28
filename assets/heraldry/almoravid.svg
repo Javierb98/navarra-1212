@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" width="200" height="240">
+  <!-- Almoravid device. Invented. Almoravid banners were largely plain, so
+       this leans on an interlace knot in bone on dark ground. -->
+  <defs>
+    <clipPath id="shield">
+      <path d="M8,8 H192 V140 C192,198 100,232 100,232 C100,232 8,198 8,140 Z"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#shield)">
+    <rect width="200" height="240" fill="#2b3630"/>
+    <g fill="none" stroke="#e8dcc0" stroke-width="10" stroke-linejoin="round">
+      <rect x="52" y="62" width="96" height="96"/>
+      <path d="M52,110 L100,62 L148,110 L100,158 Z"/>
+    </g>
+    <circle cx="100" cy="110" r="12" fill="#c9a227"/>
+  </g>
+  <path d="M8,8 H192 V140 C192,198 100,232 100,232 C100,232 8,198 8,140 Z"
+        fill="none" stroke="#2b2118" stroke-width="6"/>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" width="200" height="240">
+  <!-- Device for the Vascones of the 778 ambush. Entirely invented: these are
+       mountain communities with no shared emblem of any kind. The mountain
+       chevrons are here so the player can tell the two sides apart. -->
+  <defs>
+    <clipPath id="shield">
+      <path d="M8,8 H192 V140 C192,198 100,232 100,232 C100,232 8,198 8,140 Z"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#shield)">
+    <rect width="200" height="240" fill="#8c2f1f"/>
+    <g fill="none" stroke="#e8dcc0" stroke-width="14" stroke-linejoin="miter">
+      <path d="M20,150 L100,60 L180,150"/>
+      <path d="M20,196 L100,106 L180,196"/>
+    </g>
+  </g>
+  <path d="M8,8 H192 V140 C192,198 100,232 100,232 C100,232 8,198 8,140 Z"
+        fill="none" stroke="#2b2118" stroke-width="6"/>
+</svg>

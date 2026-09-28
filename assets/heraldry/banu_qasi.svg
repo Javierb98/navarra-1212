@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" width="200" height="240">
+  <!-- Banu Qasi of Tudela. Invented device: an eight-point star, built from two
+       squares, in the ochre of the Ebro valley. -->
+  <defs>
+    <clipPath id="shield">
+      <path d="M8,8 H192 V140 C192,198 100,232 100,232 C100,232 8,198 8,140 Z"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#shield)">
+    <rect width="200" height="240" fill="#8a6b2f"/>
+    <g fill="none" stroke="#f4ecd8" stroke-width="11">
+      <rect x="46" y="56" width="108" height="108"/>
+      <rect x="46" y="56" width="108" height="108" transform="rotate(45 100 110)"/>
+    </g>
+    <circle cx="100" cy="110" r="16" fill="#1f6b52"/>
+  </g>
+  <path d="M8,8 H192 V140 C192,198 100,232 100,232 C100,232 8,198 8,140 Z"
+        fill="none" stroke="#2b2118" stroke-width="6"/>
+</svg>
